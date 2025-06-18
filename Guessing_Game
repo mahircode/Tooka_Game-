@@ -1,0 +1,68 @@
+import random
+
+# Word banks by difficulty
+easy_words = ["ab", "cd", "ef", "gh"]
+medium_words = ["saturn", "jupiter", "moon", "sun", "uranus"]
+hard_words = ["engineering", "physiology", "hacker", "doctor", "chartered"]
+
+# Title screen
+print("\n🎉 Welcome to TOOKA: The Guessing Game! 🎉")
+print("Guess the secret word based on the difficulty you choose.")
+print("🟢 Easy (2-letter words) | 🟡 Medium (planets) | 🔴 Hard (professions & science terms)")
+
+while True:
+    level = input("\nSelect difficulty (easy / medium / hard): ").lower()
+
+    if level == "easy":
+        secret = random.choice(easy_words)
+        max_attempts = 5
+        break
+    elif level == "medium":
+        secret = random.choice(medium_words)
+        max_attempts = 7
+        break
+    elif level == "hard":
+        secret = random.choice(hard_words)
+        max_attempts = 10
+        break
+    else:
+        print("❗Invalid choice. Please try again.")
+
+attempts = 0
+print("\n🕵️‍♂️ Let's begin! Try to guess the secret word.")
+print(f"You have {max_attempts} attempts to guess the word.")
+print("Hint: " + "_ " * len(secret))
+
+while attempts < max_attempts:
+    guess = input(f"\nAttempt {attempts + 1}/{max_attempts} - Your guess: ").lower()
+    attempts += 1
+
+    if guess == secret:
+        print(f"🎊 Bingo! You guessed the word in {attempts} attempt(s). Well played!")
+        break
+
+    # Hint logic: shows 🟩 if letter is correct and in correct place, 🟨 if in word but wrong place
+    hint = ""
+    for i in range(len(secret)):
+        if i < len(guess):
+            if guess[i] == secret[i]:
+                hint += "🟩"  # Correct position
+            elif guess[i] in secret:
+                hint += "🟨"  # Wrong position
+            else:
+                hint += "⬜"  # Not in word
+        else:
+            hint += "⬜"
+
+    print("Hint: " + hint)
+
+else:
+    print(f"\n💀 Game Over! You've used all attempts.")
+    print(f"The secret word was: {secret.upper()}")
+
+# Ask to play again
+play_again = input("\n🔁 Do you want to play again? (yes/no): ").lower()
+if play_again == "yes":
+    print("\nRestart the game to play again!")
+else:
+    print("\n👋 Thanks for playing Tooka Game! See you next time!")
