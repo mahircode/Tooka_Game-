@@ -32,8 +32,11 @@ Test your brain, challenge your friends, and guess the secret word before you ru
    python3 tooka_game.py
    ✅ Make sure you have Python 3 installed on your system.
 
-   **🧠 Example Gameplay**
-  ```bash
+
+
+   🧠 Example Gameplay
+   ```bash
+   
    🎉 Welcome to TOOKA: The Guessing Game! 🎉
 Select difficulty (easy / medium / hard): medium
 
@@ -45,38 +48,39 @@ Attempt 1/7 - Your guess: planet
 Hint: 🟨⬜🟨⬜⬜⬜
 
 
-**📂 Project Structure**
+
+📂 Project Structure
 ```bash
 tooka-game/
 │
 ├── tooka_game.py       # Main game script
 └── README.md           # You're reading it!
 
-**🛠️ Tech Used**:
+🛠️ Tech Used:
 Python 3.x 🐍
 
 Terminal/Command Line
 
-**🙌 Contributions**
+🙌 Contributions
 Want to make it better?
 Feel free to fork, star ⭐, and submit pull requests or feature ideas!
 
-**📄 License**:
+📄 License:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-**💬 Let's Connect**
+💬 Let's Connect
 Created with ❤️ by Mahir Dasare
 ```bash
 
 
 ---
-### ✅ Next Steps:
+ ✅ Next Steps:
 
-- Save your Python game as `tooka_game.py`
-- Create a GitHub repo (e.g., `tooka-game`)
-- Upload both:
-  - `tooka_game.py`
-  - `README.md'
+> Save your Python game as `tooka_game.py`
+> Create a GitHub repo (e.g., `tooka-game`)
+> Upload both:
+  > `tooka_game.py`
+  > `README.md'
 
 
 
