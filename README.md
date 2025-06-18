@@ -28,12 +28,12 @@ Test your brain, challenge your friends, and guess the secret word before you ru
    cd tooka-game
 
 2. **Run the game**:
-   --bash
+   ```bash
    python3 tooka_game.py
    ✅ Make sure you have Python 3 installed on your system.
 
    **🧠 Example Gameplay**
-   --bash
+  ```bash
    🎉 Welcome to TOOKA: The Guessing Game! 🎉
 Select difficulty (easy / medium / hard): medium
 
@@ -46,13 +46,13 @@ Hint: 🟨⬜🟨⬜⬜⬜
 
 
 **📂 Project Structure**
-bash--
+```bash
 tooka-game/
 │
 ├── tooka_game.py       # Main game script
 └── README.md           # You're reading it!
 
-**🛠️ Tech Used**
+**🛠️ Tech Used**:
 Python 3.x 🐍
 
 Terminal/Command Line
@@ -61,12 +61,12 @@ Terminal/Command Line
 Want to make it better?
 Feel free to fork, star ⭐, and submit pull requests or feature ideas!
 
-**📄 License**
+**📄 License**:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 **💬 Let's Connect**
 Created with ❤️ by Mahir Dasare
---bash
+```bash
 
 
 ---
